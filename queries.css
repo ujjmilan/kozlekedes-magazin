@@ -1,12 +1,48 @@
-@media (max-width: 700px) {
-  .main-header {
-    border: dashed 12px indianred;
+@media (max-width: 75rem) {
+  .container {
+    width: 94%;
     background-color: orangered;
+    grid-template-columns: 1fr 260px;
+    column-gap: 40px;
+    row-gap: 40px ;
+  }
+
+  .main-header {
+    padding: 20px 30px;
+  }
+
+  nav a:link, a:visited {
+    margin-right: 16px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  aside {
+    padding: 35px 25px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 34rem) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 94%;
+    margin: 15px auto;
+    row-gap: 40px ;
+  }
+
+  .main-header {
+    padding: 20px;
+  }
+
+  nav a:link, a:visited {
+    display: block;
+  }
+}
+
+/* @media (max-width: 1200px) {
   .main-header {
     background-color: indigo;
   }
-}
+} */
